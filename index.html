@@ -1,53 +1,123 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <style>
-        html,body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
+  <head>
+    <title>Khaled's Portfolio</title>
+    <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-        body {
-            background-color: white;
-        }
-        h2 {
-            color: black;
-        }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <img id="background-image-blurred" src="./img/background.avif" />
+    <div class="root">
+      <div class="intro-wrapper">
+        <link rel="stylesheet" href="./css/intro.css" />
+        <p id="introWelcomeTitle">Hello there!</p>
+        <p id="introWelcomeSubtitle">Welcome to my portfolio.</p>
+        <p id="introDescription">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit ut incidunt dolore repellat numquam ad consequuntur
+          aspernatur perferendis dignissimos expedita beatae magnam perspiciatis
+          possimus, illum, molestias voluptatum reiciendis culpa veritatis!
+        </p>
+        <div class="intro-cards-wrapper">
+          <div id="intro-top">
+            <div class="profile-wrapper">
+              <img id="introProfilePic" src="./img/avatar.png" />
+              <p id="introFullName">Khaled Ahmed</p>
+            </div>
 
-@media (prefers-color-scheme: dark) {
-            body {
-                background-color: black;
-            }
-            h2 {
-                color: white;
-            }
-        }
+            <div class="socials-wrapper">
+              <p class="intro-label">Find me</p>
+              <a
+                class="fa fa-envelope intro-socialLink"
+                href="mailto:spkhalad@gmail.com"
+                target="_blank"
+              >
+                Email
+              </a>
+              <a
+                class="fa fa-linkedin-square intro-socialLink"
+                href="https://linkedin.com/"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+              <a
+                class="fa fa-github-square intro-socialLink"
+                href="https://facebook.com/"
+                target="_blank"
+              >
+                GitHub
+              </a>
+              <a
+                class="fa fa-facebook-official intro-socialLink"
+                href="https://facebook.com/"
+                target="_blank"
+              >
+                Facebook
+              </a>
+            </div>
+          </div>
+          <div class="intro-tech-stack-wrapper">
+            <div class="intro-tech-languages">
+              <p class="intro-label">I'm fimiliar with</p>
+              <div class="intro-programming-lang-grid row">
+                <div class="intro-programming-lang-item">
+                  <img src="./img/icons/nodejs.svg" />
+                  <span>Node JS</span>
+                </div>
 
-        .content {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-        }
-        
-        .link {
-            color:red;
-        }
-        
-        h2 {
-            text-align: center;
-            line-height: 1.4em;
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <h2>Hey, It's me<br>Khaled</h2>
-        <a class="link" href="mailto:spkhalad@gmail.com">📨 spkhalad@gmail.com</a>
+                <div class="intro-programming-lang-item">
+                  <img src="./img/icons/js.svg" />
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img src="./img/icons/ts.svg" />
+                  <span>TypeScript</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img src="./img/icons/graphql.svg" />
+                  <span>REST Api</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img src="./img/icons/android.svg" />
+                  <span>Android</span>
+                </div>
+                <div class="intro-programming-lang-item">
+                  <img src="./img/icons/java.svg" />
+                  <span>Java</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <link rel="stylesheet" href="./css/content.css" />
+
+        <h3 style="color: aliceblue">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil minima
+          reiciendis nisi aliquid non magnam exercitationem minus quia qui sed?
+          Dolorem eveniet aliquam mollitia maxime, tenetur ad perferendis quia
+          eum!
+        </h3>
+      </div>
     </div>
-​
-</body>
+  </body>
 </html>

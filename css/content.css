@@ -1,0 +1,6 @@
+.content-wrapper {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #2f3136;
+  overflow-y: auto;
+}

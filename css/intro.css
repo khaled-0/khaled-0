@@ -1,0 +1,126 @@
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#introWelcomeTitle {
+  color: whitesmoke;
+  font: 2em sans-serif;
+  margin: 0;
+}
+
+#introWelcomeSubtitle {
+  color: whitesmoke;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#introDescription {
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.intro-cards-wrapper {
+  padding: 8px;
+  margin-top: 24px;
+  width: max-content;
+  border-radius: 8px;
+  background-color: #2f3136;
+}
+
+#intro-top {
+  display: flex;
+  gap: 16px;
+}
+
+.profile-wrapper {
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#introProfilePic {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+#introFullName {
+  font-family: fantasy;
+  font-size: 1.5em;
+  color: #d0d0d1;
+  margin: 8px;
+}
+
+.socials-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: #292b2f;
+  border-radius: 8px;
+}
+
+.intro-label {
+  color: whitesmoke;
+  font-family: fantasy;
+  margin: 0;
+  padding: 4px;
+  font-size: 1rem;
+}
+
+.intro-socialLink {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #989a9d;
+  text-decoration: underline dotted;
+}
+
+.intro-tech-stack-wrapper {
+  max-width: 50vw;
+  margin-top: 16px;
+}
+
+.intro-tech-languages {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: #292b2f;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.intro-programming-lang-grid {
+  max-width: max-content;
+  padding: 4px;
+}
+
+.intro-programming-lang-item {
+  width: fit-content;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 4px;
+  align-items: center;
+  display: flex;
+  background-color: #2f3136;
+}
+
+.intro-programming-lang-item > img {
+  width: 28px;
+  height: 28px;
+  margin: 2px;
+  object-fit: cover;
+}
+
+.intro-programming-lang-item > span {
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: whitesmoke;
+  font-weight: 600;
+}
