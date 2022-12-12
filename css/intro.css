@@ -23,7 +23,6 @@
 .intro-cards-wrapper {
   padding: 8px;
   margin-top: 24px;
-  width: max-content;
   border-radius: 8px;
   background-color: #2f3136;
 }
@@ -80,7 +79,6 @@
 }
 
 .intro-tech-stack-wrapper {
-  max-width: 50vw;
   margin-top: 16px;
 }
 
@@ -123,4 +121,41 @@
   padding-right: 4px;
   color: whitesmoke;
   font-weight: 600;
+}
+
+.intro-about-me-wrapper {
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #292b2f;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.intro-about-me-items-holder {
+  padding: 4px;
+}
+
+.intro-about-me-card-item {
+  padding: 8px;
+  width: max-content;
+  margin: 4px;
+  flex-grow: 1;
+}
+
+.intro-about-me-card-item > i {
+  color: whitesmoke;
+  padding-left: 4px;
+}
+
+.intro-about-me-card-item > [label] {
+  color: #989a9d;
+  font-size: 0.85em;
+  font-family: sans-serif;
+  text-decoration: none;
+  margin: 0;
+}
+
+.intro-about-me-card-item > [value] {
+  color: whitesmoke;
+  font-family: sans-serif;
 }
