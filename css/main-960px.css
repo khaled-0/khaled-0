@@ -1,5 +1,15 @@
 @media (max-width: 960px) {
+  body {
+    overflow-y: scroll;
+  }
+
   .root {
     flex-direction: column;
+    height: auto;
+  }
+
+  .content-wrapper,
+  .intro-wrapper {
+    margin-bottom: 0;
   }
 }

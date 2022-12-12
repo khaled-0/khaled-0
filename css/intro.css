@@ -1,5 +1,10 @@
 .intro-wrapper {
   display: flex;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  flex: 1;
   flex-direction: column;
 }
 

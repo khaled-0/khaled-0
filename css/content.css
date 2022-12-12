@@ -1,6 +1,74 @@
 .content-wrapper {
   padding: 16px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
   background-color: #2f3136;
+  overflow-x: hidden;
   overflow-y: auto;
+  margin-bottom: 32px;
+  flex: 1.5;
+}
+
+.content-label {
+  color: whitesmoke;
+  font-family: fantasy;
+  margin: 0;
+  padding: 4px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.worked-projects-container {
+  margin: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  justify-content: center;
+  background-color: #292b2f;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 8px;
+  cursor: pointer;
+  position: relative;
+  height: 12em;
+  flex-grow: 1;
+  max-width: max-content;
+  width: 20em;
+}
+
+.project-item-banner {
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+.project-item-banner:hover {
+  transform: scale(1.25);
+}
+
+.project-item-text-holder {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.project-item-title,
+.project-item-description {
+  color: whitesmoke;
+  font-family: sans-serif;
+  pointer-events: none;
+  display: block;
+}
+
+.project-item-description {
 }
