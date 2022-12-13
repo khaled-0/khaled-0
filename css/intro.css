@@ -8,6 +8,12 @@
   flex-direction: column;
 }
 
+@media (max-width: 960px) {
+  .intro-wrapper {
+    margin-bottom: 0;
+  }
+}
+
 #introWelcomeTitle {
   color: whitesmoke;
   font: 2em sans-serif;

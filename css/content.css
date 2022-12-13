@@ -10,6 +10,12 @@
   flex: 1.5;
 }
 
+@media (max-width: 960px) {
+  .content-wrapper {
+    margin-bottom: 0;
+  }
+}
+
 .content-label {
   color: whitesmoke;
   font-family: fantasy;
@@ -24,6 +30,7 @@
   border-radius: 8px;
   padding: 8px;
   justify-content: center;
+  display: flex;
   background-color: #292b2f;
 }
 

@@ -20,9 +20,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script src="./js/main.js"></script>
   </head>
   <body>
-    <img id="background-image-blurred" src="./img/background.avif" />
+    <div class="background-wrapper">
+      <img id="background-image-blurred" src="./img/background.avif" />
+    </div>
     <div class="root">
       <div class="intro-wrapper">
         <link rel="stylesheet" href="./css/intro.css" />
@@ -160,7 +164,7 @@
         <link rel="stylesheet" href="./css/content.css" />
 
         <p class="content-label">Projects I've worked on</p>
-        <div class="worked-projects-container row">
+        <div class="worked-projects-container">
           <div class="project-item">
             <img
               class="project-item-banner"
