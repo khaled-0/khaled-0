@@ -25,7 +25,8 @@
   font-size: 1.5rem;
 }
 
-.worked-projects-container {
+.worked-projects-container,
+.github-data-container {
   margin: 8px;
   border-radius: 8px;
   padding: 8px;
@@ -77,5 +78,7 @@
   display: block;
 }
 
-.project-item-description {
+.github-data-container {
+  display: block;
+  overflow: hidden;
 }

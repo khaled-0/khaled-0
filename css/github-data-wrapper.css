@@ -1,0 +1,49 @@
+.github-data-wrapper {
+  color: whitesmoke !important;
+  font-family: sans-serif !important;
+}
+
+/* Custom Calander Styles*/
+.width-full {
+  display: flex;
+  padding: 4px;
+  margin-bottom: 4px;
+}
+
+.float-left {
+  flex-grow: 1;
+}
+
+.Link--muted {
+  color: #989a9d;
+  text-decoration: underline dotted;
+}
+
+.contrib-number {
+  color: inherit;
+}
+
+text.ContributionCalendar-label {
+  font-size: 14px;
+}
+
+.contrib-column {
+  border-left: 1px solid #555;
+  border-top: 1px solid #555;
+}
+
+.contrib-column-first {
+  border-left: 0;
+}
+
+.contrib-number {
+  font-size: 1.1rem;
+}
+
+.Link--muted {
+  font-size: 0.9rem;
+}
+
+.float-right {
+  font-size: 0.9rem;
+}
