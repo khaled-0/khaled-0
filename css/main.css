@@ -41,13 +41,8 @@ body {
   background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #a8bbbf;
+/*Firefox*/
+:root {
+  scrollbar-color: rgb(210, 210, 210) rgba(46, 54, 69, 0) !important;
+  scrollbar-width: thin !important;
 }

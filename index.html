@@ -180,7 +180,10 @@
         <p class="content-label">Me on GitHub</p>
         <!-- TODO: Improve stylngs  -->
         <div class="github-data-container">
-          <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+          <script
+            defer
+            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+          ></script>
           <link
             rel="stylesheet"
             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
@@ -191,9 +194,36 @@
           </div>
 
           <script>
-            GitHubCalendar(".github-data-wrapper", "khaled-0", {
-              responsive: true,
-            });
+            document.addEventListener("DOMContentLoaded", () =>
+              GitHubCalendar(".github-data-wrapper", "khaled-0", {
+                responsive: true,
+              })
+            );
+          </script>
+        </div>
+        <div class="github-overviews-holder">
+          <img id="github-stats-image" />
+          <img id="github-langs-image" />
+          <script type="text/javascript">
+            var githubLangSrc =
+              "https://github-readme-stats.vercel.app/api/top-langs/?username=khaled-0" +
+              "&layout=compact" +
+              "&bg_color=292b2f" +
+              "&text_color=f5f5f5" +
+              "&border_color=00000000" +
+              "&title_color=f5f5f5";
+
+            var gitHubStatsSrc =
+              "https://github-readme-stats.vercel.app/api?username=khaled-0" +
+              "&show_icons=true" +
+              "&title_color=f5f5f5" +
+              "&text_color=f5f5f5" +
+              "&bg_color=292b2f" +
+              "&border_color=00000000" +
+              "&icon_color=ffffff";
+
+            document.getElementById("github-stats-image").src = gitHubStatsSrc;
+            document.getElementById("github-langs-image").src = githubLangSrc;
           </script>
         </div>
       </div>

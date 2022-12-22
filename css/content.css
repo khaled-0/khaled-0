@@ -1,8 +1,6 @@
 .content-wrapper {
-  padding: 16px;
+  padding: 8px;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
   background-color: #2f3136;
   overflow-x: hidden;
   overflow-y: auto;
@@ -20,38 +18,43 @@
   color: whitesmoke;
   font-family: fantasy;
   margin: 0;
+  margin-bottom: 4px;
   padding: 4px;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .worked-projects-container,
-.github-data-container {
-  margin: 8px;
+.github-data-container,
+.github-overviews-holder {
+  margin-bottom: 8px;
   border-radius: 8px;
   padding: 8px;
-  justify-content: center;
-  display: flex;
+  overflow: hidden;
   background-color: #292b2f;
 }
 
-.project-item {
+.worked-projects-container {
+  overflow-x: scroll;
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+}
+
+.project-item {
   border-radius: 12px;
   overflow: hidden;
-  margin: 8px;
   cursor: pointer;
   position: relative;
-  height: 12em;
-  flex-grow: 1;
-  max-width: max-content;
-  width: 20em;
+  height: 10.5em;
+  min-width: 18em;
+  max-width: 18em;
 }
 
 .project-item-banner {
   object-fit: cover;
   transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 
 .project-item-banner:hover {
@@ -78,7 +81,30 @@
   display: block;
 }
 
-.github-data-container {
+.github-overviews-holder {
+  padding: 1px;
+  gap: 8px;
+  display: flex;
+  background-color: #2f3136;
+}
+
+@media (max-width: 1148px) {
+  .github-overviews-holder {
+    flex-direction: column;
+  }
+}
+
+.github-overviews-holder > img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.github-overviews-holder > #github-stats-image {
+  flex: 1.25;
+}
+
+.github-overviews-holder > #github-langs-image {
+  flex: 1.05;
   display: block;
-  overflow: hidden;
 }

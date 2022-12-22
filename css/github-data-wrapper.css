@@ -47,3 +47,11 @@ text.ContributionCalendar-label {
 .float-right {
   font-size: 0.9rem;
 }
+
+.js-calendar-graph-svg > g:nth-child(1) > g:nth-child(1) {
+  display: none;
+}
+
+text.ContributionCalendar-label:nth-child(54) {
+  display: none;
+}

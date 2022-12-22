@@ -6,5 +6,6 @@
   .root {
     flex-direction: column;
     height: auto;
+    padding: 8px;
   }
 }
