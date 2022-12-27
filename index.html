@@ -36,7 +36,12 @@
         <div class="intro-cards-wrapper">
           <div id="intro-top">
             <div class="profile-wrapper">
-              <img id="introProfilePic" src="./img/avatar.png" />
+              <img
+                id="introProfilePic"
+                onmouseover="toggleProfilePic(this, false)"
+                onmouseout="toggleProfilePic(this, true)"
+                src="./img/avatar-symbol.png"
+              />
               <p id="introFullName">Khaled Ahmed</p>
             </div>
 

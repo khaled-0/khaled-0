@@ -3,6 +3,11 @@ window.addEventListener("resize", function (event) {
   showHideProjectsNavOnOverflow();
 });
 
+function toggleProfilePic(element, symbolAvatar = true) {
+  if (symbolAvatar) element.setAttribute("src", "./img/avatar-symbol.png");
+  else element.setAttribute("src", "./img/avatar.png");
+}
+
 function showHideProjectsNavOnOverflow() {
   if (isOverflown(document.querySelector(".worked-projects-container"))) {
     document.querySelector(".projects-nav-left").style.display = "block";
