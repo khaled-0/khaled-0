@@ -100,13 +100,22 @@
                 </div>
 
                 <div class="intro-programming-lang-item">
+                  <img src="./img/icons/python.svg" />
+                  <span>Python</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
                   <img src="./img/icons/graphql.svg" />
                   <span>REST API</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/python.svg" />
-                  <span>Python</span>
+                  <img src="./img/icons/git.svg" />
+                  <span>Git</span>
+                </div>
+                <div class="intro-programming-lang-item">
+                  <img src="./img/icons/tux.svg" />
+                  <span>Linux</span>
                 </div>
               </div>
             </div>
@@ -161,11 +170,26 @@
       <div class="content-wrapper">
         <link rel="stylesheet" href="./css/content.css" />
 
-        <p class="content-label">Projects I've worked on</p>
+        <div style="display: flex">
+          <p class="content-label" style="flex: 1">Projects I've worked on</p>
+          <i
+            style="display: none"
+            onclick="scrollToLeft('.worked-projects-container',2.2)"
+            class="icon-left-open-big projects-nav-left"
+          ></i>
+          <i
+            style="display: none"
+            onclick="scrollToRight('.worked-projects-container',2.2)"
+            class="icon-right-open-big projects-nav-right"
+          ></i>
+        </div>
+
         <div class="worked-projects-container">
-          <!-- <p align="center" style="color: white">❰</p>
-          //TODO -->
-          <div class="project-item">
+          <a
+            class="project-item"
+            target="_blank"
+            href="https://github.com/Sketchware-Pro/Sketchware-Pro"
+          >
             <img
               class="project-item-banner"
               loading="lazy"
@@ -173,23 +197,30 @@
             />
             <div class="project-item-text-holder">
               <span class="project-item-title">Sketchware Pro</span>
-              <span class="project-item-description">Very pro app</span>
+              <span class="project-item-description"
+                >Create native Android apps on your phone.</span
+              >
             </div>
-          </div>
+          </a>
 
-          <div class="project-item">
+          <a target="_blank" href="https://samtechbd.xyz" class="project-item">
             <img
               class="project-item-banner"
               loading="lazy"
-              src="https://i.ibb.co/KjDkDnC/image.png"
+              src="https://i.ibb.co/rMGQL9g/Untitled-design.png"
             />
             <div class="project-item-text-holder">
               <span class="project-item-title">Digital Telecom</span>
-              <span class="project-item-description">Very pro app</span>
+              <span class="project-item-description"
+                >Automated USSD based topups & more...
+              </span>
             </div>
-          </div>
+          </a>
 
-          <div class="project-item">
+          <div
+            onclick="javascript:window.alert('You are already on my portfolio! 😶😶')"
+            class="project-item"
+          >
             <img
               class="project-item-banner"
               loading="lazy"
@@ -203,6 +234,10 @@
             </div>
           </div>
         </div>
+
+        <script type="text/javascript">
+          showHideProjectsNavOnOverflow();
+        </script>
 
         <p class="content-label">Me on GitHub</p>
         <!-- TODO: Improve stylngs  -->

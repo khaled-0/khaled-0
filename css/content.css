@@ -38,6 +38,8 @@
   overflow-x: scroll;
   display: flex;
   gap: 10px;
+  margin-top: 4px;
+  scroll-behavior: smooth;
 }
 
 .project-item {
@@ -73,6 +75,18 @@
   padding-bottom: 4px;
 }
 
+.projects-nav-left,
+.projects-nav-right {
+  background-color: var(--container-subdiv-background);
+  color: var(--default-text-color);
+  border-radius: 50%;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 0.5rem;
+  height: max-content;
+  cursor: pointer;
+}
+
 .project-item-title,
 .project-item-description {
   color: var(--default-text-color);
@@ -85,6 +99,7 @@
 .project-item-description {
   font-size: 0.85rem;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .github-overviews-holder {
