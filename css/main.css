@@ -1,3 +1,16 @@
+:root {
+  --container-background: #2f3136;
+  --container-subdiv-background: #292b2f;
+
+  --default-text-color: whitesmoke;
+  --default-text-color-paragraph: aliceblue;
+
+  --default-font-family: sans-serif;
+  --font-family-alt: fantasy;
+
+  --muted-link-color: #989a9d;
+}
+
 html,
 body {
   width: 100vw;
@@ -18,8 +31,8 @@ body {
 #background-image-blurred {
   height: 100vh;
   width: 100vw;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: brightness(60%) blur(2px);
+  -webkit-filter: brightness(60%) blur(2px);
   object-fit: cover;
   transform: scale(1.01);
 }

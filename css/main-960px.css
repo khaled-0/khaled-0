@@ -8,4 +8,9 @@
     height: auto;
     padding: 8px;
   }
+
+  #background-image-blurred {
+    filter: brightness(40%) blur(2px);
+    -webkit-filter: brightness(40%) blur(2px);
+  }
 }

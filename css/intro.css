@@ -13,27 +13,27 @@
 }
 
 #introWelcomeTitle {
-  color: whitesmoke;
-  font: 2em sans-serif;
+  color: var(--default-text-color);
+  font: 2em var(--default-font-family);
   margin: 0;
 }
 
 #introWelcomeSubtitle {
-  color: whitesmoke;
+  color: var(--default-text-color);
   margin: 0;
-  font-family: sans-serif;
+  font-family: var(--default-font-family);
 }
 
 #introDescription {
-  color: aliceblue;
-  font-family: sans-serif;
+  color: var(--default-text-color-paragraph);
+  font-family: var(--default-font-family);
 }
 
 .intro-cards-wrapper {
   padding: 8px;
   margin-top: 24px;
   border-radius: 8px;
-  background-color: #2f3136;
+  background-color: var(--container-background);
 }
 
 #intro-top {
@@ -54,10 +54,16 @@
   width: 128px;
   height: 128px;
   border-radius: 50%;
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+
+#introProfilePic:hover {
+  filter: none;
 }
 
 #introFullName {
-  font-family: fantasy;
+  font-family: var(--font-family-alt);
   font-size: 1.5em;
   color: #d0d0d1;
   margin: 8px;
@@ -67,13 +73,13 @@
   display: flex;
   flex-direction: column;
   padding: 8px;
-  background-color: #292b2f;
+  background-color: var(--container-subdiv-background);
   border-radius: 8px;
 }
 
 .intro-label {
-  color: whitesmoke;
-  font-family: fantasy;
+  color: var(--default-text-color);
+  font-family: var(--font-family-alt);
   margin: 0;
   padding: 4px;
   font-size: 1rem;
@@ -83,8 +89,14 @@
   padding: 8px;
   cursor: pointer;
   font-size: 1em;
-  color: #989a9d;
+  color: var(--muted-link-color);
   text-decoration: underline dotted;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .intro-socialLink:hover {
+    color: var(--default-text-color);
+  }
 }
 
 .intro-tech-stack-wrapper {
@@ -95,7 +107,7 @@
   display: flex;
   flex-direction: column;
   padding: 8px;
-  background-color: #292b2f;
+  background-color: var(--container-subdiv-background);
   overflow: hidden;
   border-radius: 8px;
 }
@@ -112,7 +124,7 @@
   margin: 4px;
   align-items: center;
   display: flex;
-  background-color: #2f3136;
+  background-color: var(--container-background);
 }
 
 .intro-programming-lang-item > img {
@@ -123,19 +135,19 @@
 }
 
 .intro-programming-lang-item > span {
-  font-family: sans-serif;
+  font-family: var(--default-font-family);
   font-size: 1rem;
   text-align: center;
   padding-left: 4px;
   padding-right: 4px;
-  color: whitesmoke;
+  color: var(--default-text-color);
   font-weight: 600;
 }
 
 .intro-about-me-wrapper {
   margin-top: 8px;
   padding: 8px;
-  background-color: #292b2f;
+  background-color: var(--container-subdiv-background);
   overflow: hidden;
   border-radius: 8px;
 }
@@ -152,19 +164,19 @@
 }
 
 .intro-about-me-card-item > i {
-  color: whitesmoke;
+  color: var(--default-text-color);
   padding-left: 4px;
 }
 
 .intro-about-me-card-item > [label] {
-  color: #989a9d;
+  color: var(--muted-link-color);
   font-size: 0.85em;
-  font-family: sans-serif;
+  font-family: var(--default-font-family);
   text-decoration: none;
   margin: 0;
 }
 
 .intro-about-me-card-item > [value] {
-  color: whitesmoke;
-  font-family: sans-serif;
+  color: var(--default-text-color);
+  font-family: var(--default-font-family);
 }
