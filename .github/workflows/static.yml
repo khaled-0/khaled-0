@@ -30,8 +30,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Pages Minify
-        uses: DrA1ex/pages-minify@v1.0.3
+      - name: HTML/CSS/JS Minifier
+        uses: docker://devatherock/minify-js:1.0.3
+        with:
+          add_suffix: false
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
