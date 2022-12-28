@@ -5,7 +5,7 @@ window.addEventListener("resize", function (event) {
 
 function toggleProfilePic(element, symbolAvatar = true) {
   if (symbolAvatar) element.setAttribute("src", "./img/avatar-symbol.png");
-  else element.setAttribute("src", "./img/avatar.png");
+  else element.setAttribute("src", "./img/avatar.jpg");
 }
 
 function showHideProjectsNavOnOverflow() {
