@@ -43,7 +43,6 @@
                 src="./img/avatar-symbol.png"
               />
               <p id="introFullName">Khaled Ahmed</p>
-              <link rel="preload" as="image" href="./img/avatar.jpg" />
             </div>
 
             <div class="socials-wrapper">
@@ -198,8 +197,7 @@
           >
             <img
               class="project-item-banner"
-              loading="lazy"
-              src="https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/main/assets/Sketchware-Pro.png"
+              src="./img/project-banners/Sketchware-Pro.webp"
             />
             <div class="project-item-text-holder">
               <span class="project-item-title">Sketchware Pro</span>
@@ -216,8 +214,7 @@
           >
             <img
               class="project-item-banner"
-              loading="lazy"
-              src="https://i.ibb.co/RQGJZPK/image.png"
+              src="./img/project-banners/discord-bots.webp"
             />
             <div class="project-item-text-holder">
               <span class="project-item-title">Discord Bots</span>
@@ -230,8 +227,7 @@
           <a target="_blank" href="https://samtechbd.xyz" class="project-item">
             <img
               class="project-item-banner"
-              loading="lazy"
-              src="https://i.ibb.co/rMGQL9g/Untitled-design.png"
+              src="./img/project-banners/digital-telecom.webp"
             />
             <div class="project-item-text-holder">
               <span class="project-item-title">Digital Telecom</span>
@@ -248,8 +244,7 @@
           >
             <img
               class="project-item-banner"
-              loading="lazy"
-              src="https://i.ibb.co/hKwWWPb/image.png"
+              src="./img/project-banners/untitled-chat-app.webp"
             />
             <div class="project-item-text-holder">
               <span class="project-item-title">Untitled Chat App</span>
@@ -263,11 +258,7 @@
             onclick="javascript:window.alert('You are already on my portfolio! 😶😶')"
             class="project-item"
           >
-            <img
-              class="project-item-banner"
-              loading="lazy"
-              src="./img/background.avif"
-            />
+            <img class="project-item-banner" src="./img/background.avif" />
             <div class="project-item-text-holder">
               <span class="project-item-title">My Portfolio</span>
               <span class="project-item-description">
@@ -316,26 +307,6 @@
           <img id="github-stats-image" />
           <img id="github-langs-image" />
           <script type="text/javascript">
-            var githubLangSrc =
-              "https://github-readme-stats.vercel.app/api/top-langs/?username=khaled-0" +
-              "&layout=compact" +
-              "&bg_color=292b2f" +
-              "&text_color=f5f5f5" +
-              "&hide_border=true" +
-              "&langs_count=10" +
-              "&custom_title=Khaled's Most Used Languages" +
-              "&title_color=f5f5f5";
-
-            var gitHubStatsSrc =
-              "https://github-readme-stats.vercel.app/api?username=khaled-0" +
-              "&show_icons=true" +
-              "&include_all_commits=true" +
-              "&title_color=f5f5f5" +
-              "&text_color=f5f5f5" +
-              "&bg_color=292b2f" +
-              "&hide_border=true" +
-              "&icon_color=ffffff";
-
             document.getElementById("github-stats-image").src = gitHubStatsSrc;
             document.getElementById("github-langs-image").src = githubLangSrc;
           </script>
