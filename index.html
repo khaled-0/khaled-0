@@ -16,6 +16,26 @@
     />
 
     <script src="./js/main.js"></script>
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <div class="github-calendar-temp" style="display: none"></div>
+    <script>
+      GitHubCalendar(".github-calendar-temp", "khaled-0", {
+        responsive: true,
+      }).then(() => {
+        if (typeof insertGithubCalendar == "function") insertGithubCalendar();
+        //Overriding Learn how we count cotribution
+        const elem = document.querySelector(".Link--muted");
+        elem.href = "https://github.com/khaled-0";
+        elem.innerHTML = "View Profile On GitHub";
+        elem.target = "_blank";
+        elem.classList.add("intro-socialLink");
+      });
+    </script>
   </head>
   <body>
     <div class="background-wrapper">
@@ -278,30 +298,18 @@
           <div class="github-data-wrapper">
             Fetching GitHub's API. This won't take long.
           </div>
-          <script
-            defer
-            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-          ></script>
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-          />
-          <link rel="stylesheet" href="./css/github-data-wrapper.css" />
-
-          <script>
-            document.addEventListener("DOMContentLoaded", () =>
-              GitHubCalendar(".github-data-wrapper", "khaled-0", {
-                responsive: true,
-              }).then(() => {
-                //Overriding Learn how we count cotribution
-                const elem = document.querySelector(".Link--muted");
-                elem.href = "https://github.com/khaled-0";
-                elem.innerHTML = "View Profile On GitHub";
-                elem.target = "_blank";
-                elem.classList.add("intro-socialLink");
-              })
-            );
+          <script type="text/javascript">
+            function insertGithubCalendar() {
+              const tempView = document.querySelector(".github-calendar-temp");
+              const targetView = document.querySelector(".github-data-wrapper");
+              if (tempView.childElementCount == 0) return;
+              targetView.replaceChildren(...tempView.childNodes);
+              if (tempView.childNodes == targetView.childNodes)
+                tempView.parentElement.removeChild(tempView);
+            }
+            insertGithubCalendar();
           </script>
+          <link rel="stylesheet" href="./css/github-data-wrapper.css" />
         </div>
         <div class="github-overviews-holder">
           <img id="github-stats-image" />
