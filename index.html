@@ -3,6 +3,10 @@
   <head>
     <title>Khaled's Portfolio</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="description"
+      content="A nice and minimal looking portfolio of a programmer/developer named Khaled"
+    />
 
     <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -39,7 +43,11 @@
   </head>
   <body>
     <div class="background-wrapper">
-      <img id="background-image-blurred" src="./img/background.avif" />
+      <img
+        id="background-image-blurred"
+        src="./img/background.avif"
+        alt="background-image"
+      />
     </div>
     <div class="root">
       <div class="intro-wrapper">
@@ -57,6 +65,7 @@
           <div id="intro-top">
             <div class="profile-wrapper">
               <img
+                alt="Profile picture"
                 id="introProfilePic"
                 onmouseover="toggleProfilePic(this, false)"
                 onmouseout="toggleProfilePic(this, true)"
@@ -100,46 +109,46 @@
               <p class="intro-label">I'm fimiliar with</p>
               <div class="intro-programming-lang-grid row">
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/nodejs.svg" />
+                  <img alt="NodeJS" src="./img/icons/nodejs.svg" />
                   <span>NodeJS</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/android.svg" />
+                  <img alt="Android" src="./img/icons/android.svg" />
                   <span>Android</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/java.svg" />
+                  <img alt="Java" src="./img/icons/java.svg" />
                   <span>Java</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/js.svg" />
+                  <img alt="JavaScript" src="./img/icons/js.svg" />
                   <span>JavaScript</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/ts.svg" />
+                  <img alt="TypeScript" src="./img/icons/ts.svg" />
                   <span>TypeScript</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/python.svg" />
+                  <img alt="Python" src="./img/icons/python.svg" />
                   <span>Python</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/graphql.svg" />
+                  <img alt="REST API" src="./img/icons/graphql.svg" />
                   <span>REST API</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/git.svg" />
+                  <img alt="Git" src="./img/icons/git.svg" />
                   <span>Git</span>
                 </div>
                 <div class="intro-programming-lang-item">
-                  <img src="./img/icons/tux.svg" />
+                  <img alt="Linux" src="./img/icons/tux.svg" />
                   <span>Linux</span>
                 </div>
               </div>
@@ -199,11 +208,13 @@
           <p class="content-label" style="flex: 1">Projects I've worked on</p>
           <i
             style="display: none"
+            tabindex="0"
             onclick="scrollToLeft('.worked-projects-container',2.2)"
             class="icon-left-open-big projects-nav-left"
           ></i>
           <i
             style="display: none"
+            tabindex="0"
             onclick="scrollToRight('.worked-projects-container',2.2)"
             class="icon-right-open-big projects-nav-right"
           ></i>
@@ -216,6 +227,7 @@
             href="https://github.com/Sketchware-Pro/Sketchware-Pro"
           >
             <img
+              alt="Sketchware Pro"
               class="project-item-banner"
               src="./img/project-banners/Sketchware-Pro.webp"
             />
@@ -233,6 +245,7 @@
             onclick="javascript:if(window.confirm('I\'ll create a seperate page in future. For now the list(2) is available on my github repos. Want To Visit?')) window.open('https://github.com/khaled-0?tab=repositories')"
           >
             <img
+              alt="Discord Bots"
               class="project-item-banner"
               src="./img/project-banners/discord-bots.webp"
             />
@@ -246,6 +259,7 @@
 
           <a target="_blank" href="https://samtechbd.xyz" class="project-item">
             <img
+              alt="Digital Telecom"
               class="project-item-banner"
               src="./img/project-banners/digital-telecom.webp"
             />
@@ -263,6 +277,7 @@
             class="project-item"
           >
             <img
+              alt="Untitled Chatting App"
               class="project-item-banner"
               src="./img/project-banners/untitled-chat-app.webp"
             />
@@ -278,7 +293,11 @@
             onclick="javascript:window.alert('You are already on my portfolio! 😶😶')"
             class="project-item"
           >
-            <img class="project-item-banner" src="./img/background.avif" />
+            <img
+              alt="My Portfolio"
+              class="project-item-banner"
+              src="./img/background.avif"
+            />
             <div class="project-item-text-holder">
               <span class="project-item-title">My Portfolio</span>
               <span class="project-item-description">
@@ -312,8 +331,8 @@
           <link rel="stylesheet" href="./css/github-data-wrapper.css" />
         </div>
         <div class="github-overviews-holder">
-          <img id="github-stats-image" />
-          <img id="github-langs-image" />
+          <img id="github-stats-image" alt="github-stats-banner" />
+          <img id="github-langs-image" alt="github-langs-banner" />
           <script type="text/javascript">
             document.getElementById("github-stats-image").src = gitHubStatsSrc;
             document.getElementById("github-langs-image").src = githubLangSrc;

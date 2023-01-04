@@ -59,3 +59,8 @@ body {
   scrollbar-color: rgb(210, 210, 210) rgba(46, 54, 69, 0) !important;
   scrollbar-width: thin !important;
 }
+
+/* Firefox image alt visibility fix (Why Mozilla Why) */
+img:-moz-loading {
+  visibility: hidden;
+}
