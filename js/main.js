@@ -1,5 +1,5 @@
 window.addEventListener("resize", function (event) {
-  document.body.scrollTo(0, 0); //Fixes the weird overflow behaivour on screen resize;
+  if (document.body) document.body.scrollTo(0, 0); //Fixes the weird overflow behaivour on screen resize;
   showHideProjectsNavOnOverflow();
 });
 
@@ -41,10 +41,34 @@ function toggleProfilePic(element, symbolAvatar = true) {
 }
 
 function showHideProjectsNavOnOverflow() {
-  if (isOverflown(document.querySelector(".worked-projects-container"))) {
-    document.querySelector(".projects-nav-left").style.display = "block";
-    document.querySelector(".projects-nav-right").style.display = "block";
+  const container = document.querySelector(".worked-projects-container");
+
+  if (!isOverflown(container) && container.classList.contains("row"))
+    return (document.querySelector(".projects-nav").style.display = "block");
+
+  if (container.classList.contains("row") || isOverflown(container))
+    return (document.querySelector(".projects-nav").style.display = "block");
+
+  document.querySelector(".projects-nav").style.display = "none";
+}
+
+function toggleProjectsListExpandCollapse() {
+  const view = document.querySelector(".worked-projects-container");
+  const toggleButton = document.querySelector(".projects-nav");
+
+  if (view.classList.contains("row")) {
+    view.classList.remove("row");
+    view.style.justifyContent = null;
+    toggleButton.dataset.expanded = "false";
+    toggleButton.innerHTML = "Expand";
+  } else {
+    view.classList.add("row");
+    view.style.justifyContent = "center";
+    toggleButton.dataset.expanded = "true";
+    toggleButton.innerHTML = "Collapse";
   }
+
+  showHideProjectsNavOnOverflow();
 }
 
 function scrollToLeft(viewSelector, scrollMultiplier = 1) {

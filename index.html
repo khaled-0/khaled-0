@@ -7,6 +7,14 @@
       name="description"
       content="A nice and minimal looking portfolio of a programmer/developer named Khaled"
     />
+    <meta property="og:title" content="Khaled's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A nice and minimal looking portfolio of a programmer/developer named Khaled"
+    />
+    <meta property="og:image" content="./img/avatar-symbol.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -27,7 +35,10 @@
       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
     <div class="github-calendar-temp" style="display: none"></div>
-    <script>
+    <script
+      text="preloading github calendar to a hidden temp div"
+      type="text/javascript"
+    >
       GitHubCalendar(".github-calendar-temp", "khaled-0", {
         responsive: true,
       }).then(() => {
@@ -206,18 +217,14 @@
 
         <div style="display: flex">
           <p class="content-label" style="flex: 1">Projects I've worked on</p>
-          <i
+          <button
             style="display: none"
-            tabindex="0"
-            onclick="scrollToLeft('.worked-projects-container',2.2)"
-            class="icon-left-open-big projects-nav-left"
-          ></i>
-          <i
-            style="display: none"
-            tabindex="0"
-            onclick="scrollToRight('.worked-projects-container',2.2)"
-            class="icon-right-open-big projects-nav-right"
-          ></i>
+            onclick="toggleProjectsListExpandCollapse()"
+            class="projects-nav"
+            data-expanded="false"
+          >
+            Expand
+          </button>
         </div>
 
         <div class="worked-projects-container">
@@ -241,7 +248,7 @@
 
           <a
             class="project-item"
-            target="_blank"
+            href="javascript:void(0)"
             onclick="javascript:if(window.confirm('I\'ll create a seperate page in future. For now the list(2) is available on my github repos. Want To Visit?')) window.open('https://github.com/khaled-0?tab=repositories')"
           >
             <img
@@ -289,7 +296,8 @@
             </div>
           </a>
 
-          <div
+          <a
+            href="javascript:void(0)"
             onclick="javascript:window.alert('You are already on my portfolio! 😶😶')"
             class="project-item"
           >
@@ -304,7 +312,7 @@
                 Yes it counts as well.</span
               >
             </div>
-          </div>
+          </a>
         </div>
 
         <script type="text/javascript">

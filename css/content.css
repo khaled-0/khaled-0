@@ -38,7 +38,7 @@
   overflow-x: scroll;
   display: flex;
   gap: 10px;
-  margin-top: 4px;
+  margin: 4px auto auto;
   scroll-behavior: smooth;
 }
 
@@ -50,6 +50,7 @@
   height: 10.5em;
   min-width: 18em;
   max-width: 18em;
+  display: block;
 }
 
 .project-item-banner {
@@ -75,16 +76,33 @@
   padding-bottom: 4px;
 }
 
-.projects-nav-left,
-.projects-nav-right {
+.projects-nav {
   background-color: var(--container-subdiv-background);
-  color: var(--default-text-color);
-  border-radius: 50%;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding: 0.5rem;
-  height: max-content;
+  border-radius: 8px;
+  min-width: 6rem;
+  font-weight: bold;
+  font-family: var(--default-font-family);
+  border: none;
   cursor: pointer;
+  color: var(--default-text-color);
+}
+
+.projects-nav:active {
+  scale: 0.98;
+}
+
+.projects-nav::after {
+  transition: transform 0.1s ease;
+  content: "\25bc";
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.projects-nav[data-expanded="false"]::after {
+  transform: rotate(0deg);
+}
+.projects-nav[data-expanded="true"]::after {
+  transform: rotate(-180deg);
 }
 
 .project-item-title,
