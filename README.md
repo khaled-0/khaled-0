@@ -18,16 +18,14 @@ would very much like to be a part of something like that.
 ## I'm fimiliar with
 
 - NodeJS
-- Android
-- Java
-- JavaScript
-- TypeScript
+- Android/Java
+- JavaScript/TypeScript
 - Python
-- REST API
 - Git
 - Linux
+- ...and many more
 
-## [Visit My Portfolio](https://khaled-0.github.io)
+## [Visit My Portfolio](https://khaled.is-a.dev)
 
 <br>
 <a href="#">
