@@ -4,7 +4,7 @@ window.addEventListener("resize", function (event) {
 });
 
 var githubLangSrc =
-  "https://github-readme-stats.vercel.app/api/top-langs/?username=khaled-0" +
+  "https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=khaled-0" +
   "&layout=compact" +
   "&bg_color=292b2f" +
   "&text_color=f5f5f5" +
@@ -14,7 +14,7 @@ var githubLangSrc =
   "&title_color=f5f5f5";
 
 var gitHubStatsSrc =
-  "https://github-readme-stats.vercel.app/api?username=khaled-0" +
+  "https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=khaled-0" +
   "&show_icons=true" +
   "&include_all_commits=true" +
   "&title_color=f5f5f5" +
