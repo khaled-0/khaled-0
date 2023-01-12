@@ -29,8 +29,8 @@ would very much like to be a part of something like that.
 
 <br>
 <a href="#">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=khaled-0&include_all_commits=true&show_icons=true&theme=transparent" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=khaled-0&include_all_commits=true&show_icons=true&theme=transparent" />
 <//a>
 <a href="#">
-  <img align="center" style="margin:0.5rem; height:195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=khaled-0&layout=compact&theme=transparent&langs_count=10&custom_title=Khaled's%20Most%20Used%20Languages"/>
+  <img align="center" style="margin:0.5rem; height:195px" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=khaled-0&layout=compact&theme=transparent&langs_count=10&custom_title=Khaled's%20Most%20Used%20Languages"/>
 </a>
