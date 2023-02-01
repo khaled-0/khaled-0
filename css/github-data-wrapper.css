@@ -74,3 +74,13 @@ div.contrib-column:nth-child(4) > span:nth-child(3) {
 div.contrib-column:nth-child(5) > span:nth-child(3) {
   display: none;
 }
+
+/* We're celebrating 100 million developers!  */
+
+div.width-full:nth-child(1) {
+  display: none;
+}
+
+.js-calendar-graph {
+  padding-top: 8px;
+}

@@ -69,6 +69,13 @@
   font-size: 1.5em;
   color: #d0d0d1;
   margin: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#introFullName:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 
 .socials-wrapper {
@@ -130,8 +137,8 @@
 }
 
 .intro-programming-lang-item > img {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   margin: 2px;
   object-fit: cover;
 }
@@ -181,4 +188,23 @@
 .intro-about-me-card-item > [value] {
   color: var(--default-text-color);
   font-family: var(--default-font-family);
+}
+
+.cv-linktree-holder {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+}
+.cv-linktree-item {
+  color: #fff;
+  padding: 12px;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-linktree-item > img {
+  filter: brightness(0) invert(1);
+  height: 18px;
+  width: 18px;
 }

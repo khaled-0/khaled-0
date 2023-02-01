@@ -23,17 +23,7 @@ var gitHubStatsSrc =
   "&hide_border=true" +
   "&icon_color=ffffff";
 
-preloadImages([
-  "./img/avatar.jpg",
-  "./img/avatar-symbol.png",
-  "./img/background.avif",
-  "./img/project-banners/digital-telecom.webp",
-  "./img/project-banners/discord-bots.webp",
-  "./img/project-banners/Sketchware-Pro.webp",
-  "./img/project-banners/untitled-chat-app.webp",
-  gitHubStatsSrc,
-  githubLangSrc,
-]);
+preloadImages([gitHubStatsSrc, githubLangSrc]);
 
 function toggleProfilePic(element, symbolAvatar = true) {
   if (symbolAvatar) element.setAttribute("src", "./img/avatar-symbol.png");
