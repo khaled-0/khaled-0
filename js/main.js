@@ -25,23 +25,6 @@ var gitHubStatsSrc =
 
 preloadImages([gitHubStatsSrc, githubLangSrc]);
 
-function toggleProfilePic(element, symbolAvatar = true) {
-  if (symbolAvatar) element.setAttribute("src", "./img/avatar-symbol.png");
-  else element.setAttribute("src", "./img/avatar.jpg");
-}
-
-function showHideProjectsNavOnOverflow() {
-  const container = document.querySelector(".worked-projects-container");
-
-  if (!isOverflown(container) && container.classList.contains("row"))
-    return (document.querySelector(".projects-nav").style.display = "block");
-
-  if (container.classList.contains("row") || isOverflown(container))
-    return (document.querySelector(".projects-nav").style.display = "block");
-
-  document.querySelector(".projects-nav").style.display = "none";
-}
-
 function toggleProjectsListExpandCollapse() {
   const view = document.querySelector(".worked-projects-container");
   const toggleButton = document.querySelector(".projects-nav");
@@ -57,8 +40,6 @@ function toggleProjectsListExpandCollapse() {
     toggleButton.dataset.expanded = "true";
     toggleButton.innerHTML = "Collapse";
   }
-
-  showHideProjectsNavOnOverflow();
 }
 
 function scrollToLeft(viewSelector, scrollMultiplier = 1) {

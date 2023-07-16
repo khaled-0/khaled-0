@@ -1,9 +1,16 @@
 const introDescList = [
   "Welcome to my portfolio.",
   "Hope you're doing great.",
-  "Have a nice day ahead.",
-  "Hoping for a bright future forward.",
-  "Technology is cool.",
+  "Unlocking Tech Wonders.",
+  "Creating Tomorrow, Today.",
+  "Tech Dreams, Realized.",
+  "Innovation Redefined.",
+  "Tech Passion, Unleashed.",
+  "Beyond Boundaries, Techwise.",
+  "Tech Trailblazer at Your Service.",
+  "Empowering Future through Tech.",
+  "Building Brilliance, Byte by Byte.",
+  "Welcome to My Tech Odyssey.",
 ];
 
 var currentItemOnScreen = 0;
@@ -13,7 +20,7 @@ async function typeWriter() {
   //Pick the next item and so on
   var introDesc = introDescList[currentItemOnScreen++ % introDescList.length];
   //Hehe boii
-  if (randomIntFromInterval(100, 999) == 420) {
+  if (randomIntFromInterval(1, 999) == 420) {
     introDesc = "amongussssssss";
     currentItemOnScreen = 0;
   }

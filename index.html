@@ -21,38 +21,12 @@
     <link rel="stylesheet" href="./css/main-960px.css" />
     <link rel="stylesheet" href="./css/3rd-party/fontello-embedded.css" />
 
-    <link
-      rel="stylesheet"
-      href="./css/3rd-party/flexboxgrid.min.css"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="./css/3rd-party/flexboxgrid.min.css" />
 
     <script src="./js/main.js"></script>
     <script src="./js/matrix-text-effect.js"></script>
-
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-    <div class="github-calendar-temp" style="display: none"></div>
-    <script
-      text="preloading github calendar to a hidden temp div"
-      type="text/javascript"
-    >
-      GitHubCalendar(".github-calendar-temp", "khaled-0", {
-        responsive: true,
-      }).then(() => {
-        if (typeof insertGithubCalendar == "function") insertGithubCalendar();
-        //Overriding Learn how we count cotribution
-        const elem = document.querySelector(".Link--muted");
-        elem.href = "https://github.com/khaled-0";
-        elem.innerHTML = "View Profile On GitHub";
-        elem.target = "_blank";
-        elem.classList.add("intro-socialLink");
-      });
-    </script>
   </head>
+
   <body>
     <div class="background-wrapper">
       <img
@@ -65,16 +39,20 @@
       <div class="intro-wrapper">
         <link rel="stylesheet" href="./css/intro.css" />
         <p id="introWelcomeTitle">Hello there!</p>
-        <span
-          ><p id="introWelcomeSubtitle">Welcome to my portfolio.</p>
-          <span id="introCursor" style="opacity: 0">▉</span></span
-        >
+        <span>
+          <p id="introWelcomeSubtitle">Welcome to my portfolio.</p>
+          <span id="introCursor" style="opacity: 0">▉</span>
+        </span>
         <p id="introDescription">
-          I'm a multi purpose tech nerd who likes to make stuff. Throughout my
-          journey into the tech realm, I've encountered fascinating projects and
-          would very much like to be a part of something like that. So here I'm
-          putting my efforts into building this portfolio for my future employer
-          to see. I'm looking forward to working with you.
+          As a passionate and versatile tech enthusiast, I thoroughly enjoy the
+          process of bringing captivating ideas to life. Along my journey in the
+          vast realm of technology, I have been fortunate to encounter
+          fascinating projects that have continually fueled my creativity. Now,
+          I am focused on constructing a portfolio that showcases the pinnacle
+          of my skills and accomplishments, with the aim of impressing future
+          employers. I eagerly look forward to the prospect of collaborating
+          with you, as together we embark on remarkable ventures that push the
+          boundaries of innovation and technological excellence.
         </p>
         <script defer src="./js/typewriter-intro.js"></script>
         <div class="intro-cards-wrapper">
@@ -83,9 +61,7 @@
               <img
                 alt="Profile picture"
                 id="introProfilePic"
-                onmouseover="toggleProfilePic(this, false)"
-                onmouseout="toggleProfilePic(this, true)"
-                src="./img/avatar-symbol.png"
+                src="./img/avatar.png"
               />
               <p id="introFullName" data-value="Khaled Ahmed">Khaled Ahmed</p>
               <script>
@@ -130,8 +106,13 @@
 
           <div class="intro-tech-stack-wrapper">
             <div class="intro-tech-languages">
-              <p class="intro-label">I'm fimiliar with</p>
+              <p class="intro-label">I'm fimiliar working with</p>
               <div class="intro-programming-lang-grid row">
+                <div class="intro-programming-lang-item">
+                  <img alt="Java" src="./img/icons/flutter.svg" />
+                  <span>Flutter</span>
+                </div>
+
                 <div class="intro-programming-lang-item">
                   <img alt="NodeJS" src="./img/icons/nodejs.svg" />
                   <span>NodeJS</span>
@@ -140,11 +121,6 @@
                 <div class="intro-programming-lang-item">
                   <img alt="Android" src="./img/icons/android.svg" />
                   <span>Android</span>
-                </div>
-
-                <div class="intro-programming-lang-item">
-                  <img alt="Java" src="./img/icons/flutter.svg" />
-                  <span>Flutter</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
@@ -168,13 +144,18 @@
                 </div>
 
                 <div class="intro-programming-lang-item">
+                  <img alt="SvelteJS" src="./img/icons/svelte.svg" />
+                  <span>SvelteJS</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
                   <img alt="Python" src="./img/icons/python.svg" />
                   <span>Python</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
                   <img alt="REST API" src="./img/icons/graphql.svg" />
-                  <span>REST API</span>
+                  <span>REST/RPC API</span>
                 </div>
 
                 <div class="intro-programming-lang-item">
@@ -189,10 +170,7 @@
             </div>
           </div>
 
-          <div
-            class="intro-about-me-wrapper cv-linktree-holder"
-            style="display: none"
-          >
+          <div class="intro-about-me-wrapper cv-linktree-holder">
             <a
               href=""
               target="_blank"
@@ -206,7 +184,7 @@
               <i class="icon-link-ext"></i>
             </a>
             <a
-              href=""
+              href="https://linktr.ee/khaled.0"
               target="_blank"
               class="intro-programming-lang-item cv-linktree-item"
             >
@@ -250,7 +228,7 @@
               <div class="intro-about-me-card-item">
                 <p label>Hobbies:</p>
                 <i class="icon-steam"></i>
-                <span value>Games, Anime</span>
+                <span value>Games, Anime, FOSS</span>
               </div>
               <div class="intro-about-me-card-item">
                 <p label>Goals:</p>
@@ -268,16 +246,41 @@
         <div style="display: flex">
           <p class="content-label" style="flex: 1">Projects I've worked on</p>
           <button
-            style="display: none"
             onclick="toggleProjectsListExpandCollapse()"
             class="projects-nav"
-            data-expanded="false"
+            data-expanded="true"
           >
-            Expand
+            Collapse
           </button>
         </div>
 
-        <div class="worked-projects-container">
+        <div
+          class="worked-projects-container row"
+          style="justify-content: center"
+        >
+          <a
+            target="_blank"
+            href="https://www.amrserver.pw/"
+            class="project-item"
+          >
+            <img
+              alt="AMRServer"
+              class="project-item-banner"
+              src="https://i.ibb.co/QvZcKXN/image.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title"
+                >AMRServer<span class="project-item-badge"
+                  >Ongoing Startup</span
+                ></span
+              >
+              <span class="project-item-description"
+                >Automated USSD based topups & more, Made with Flutter & NodeJS
+                + MongoDB as backend.
+              </span>
+            </div>
+          </a>
+
           <a
             class="project-item"
             target="_blank"
@@ -297,38 +300,6 @@
           </a>
 
           <a
-            class="project-item"
-            href="javascript:void(0)"
-            onclick="javascript:if(window.confirm('I\'ll create a seperate page in future. For now the list(2) is available on my github repos. Want To Visit?')) window.open('https://github.com/khaled-0?tab=repositories')"
-          >
-            <img
-              alt="Discord Bots"
-              class="project-item-banner"
-              src="./img/project-banners/discord-bots.webp"
-            />
-            <div class="project-item-text-holder">
-              <span class="project-item-title">Discord Bots</span>
-              <span class="project-item-description"
-                >Random bots for random needs</span
-              >
-            </div>
-          </a>
-
-          <a target="_blank" href="https://samtechbd.xyz" class="project-item">
-            <img
-              alt="Digital Telecom"
-              class="project-item-banner"
-              src="./img/project-banners/digital-telecom.webp"
-            />
-            <div class="project-item-text-holder">
-              <span class="project-item-title">Digital Telecom</span>
-              <span class="project-item-description"
-                >Automated USSD based topups & more...
-              </span>
-            </div>
-          </a>
-
-          <a
             target="_blank"
             href="https://untitled-chatting-app.khaledahmed18.repl.co/"
             class="project-item"
@@ -341,7 +312,7 @@
             <div class="project-item-text-holder">
               <span class="project-item-title">Untitled Chat App</span>
               <span class="project-item-description"
-                >Random abandoned chatting app project...
+                >Random abandoned chatting app project made with WebSocket
               </span>
             </div>
           </a>
@@ -363,32 +334,37 @@
               >
             </div>
           </a>
-        </div>
 
-        <script type="text/javascript">
-          showHideProjectsNavOnOverflow();
-        </script>
+          <a
+            class="project-item"
+            target="_blank"
+            href="https://github.com/khaled-0?tab=repositories"
+          >
+            <!-- <img
+              alt="Discord Bots"
+              class=""
+              src="./img/project-banners/???.webp"
+            /> -->
+            <div
+              class="github-card project-item-banner"
+              data-github="khaled-0"
+              data-width="400"
+              data-height=""
+              data-theme="default"
+            ></div>
+            <div class="project-item-text-holder">
+              <span class="project-item-title"
+                >And a lot more real world projects</span
+              >
+              <span class="project-item-description"
+                >Checkout My Github Profile</span
+              >
+            </div>
+          </a>
+        </div>
 
         <p class="content-label" style="margin-top: 8px">Me on GitHub</p>
-        <!-- TODO: Improve stylngs  -->
         <div class="github-data-container">
-          <div class="github-data-wrapper">
-            Fetching GitHub's API. This won't take long.
-          </div>
-          <script type="text/javascript">
-            function insertGithubCalendar() {
-              const tempView = document.querySelector(".github-calendar-temp");
-              const targetView = document.querySelector(".github-data-wrapper");
-              if (tempView.childElementCount == 0) return;
-              targetView.replaceChildren(...tempView.childNodes);
-              if (tempView.childNodes == targetView.childNodes)
-                tempView.parentElement.removeChild(tempView);
-            }
-            insertGithubCalendar();
-          </script>
-          <link rel="stylesheet" href="./css/github-data-wrapper.css" />
-        </div>
-        <div class="github-overviews-holder">
           <img id="github-stats-image" alt="github-stats-banner" />
           <img id="github-langs-image" alt="github-langs-banner" />
           <script type="text/javascript">
@@ -398,7 +374,20 @@
         </div>
 
         <!-- TODO <p class="content-label">I also have</p> -->
+        <!-- <div class="worked-projects-container"></div> -->
+
+        <p class="farewell-text">
+          Thank you for visiting my digital sanctuary of innovation and
+          creativity. As you prepare to close this window, remember that our
+          journey doesn't have to end here. Let's embark on a collaborative
+          adventure, shaping the future of technology together. Reach out to me,
+          and together we'll turn possibilities into realities, challenges into
+          triumphs, and dreams into groundbreaking achievements. The tech realm
+          awaits us—let's make it extraordinary.
+        </p>
       </div>
     </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 </html>
