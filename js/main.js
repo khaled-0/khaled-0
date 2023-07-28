@@ -1,6 +1,5 @@
 window.addEventListener("resize", function (event) {
   if (document.body) document.body.scrollTo(0, 0); //Fixes the weird overflow behaivour on screen resize;
-  showHideProjectsNavOnOverflow();
 });
 
 var githubLangSrc =
