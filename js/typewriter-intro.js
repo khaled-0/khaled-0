@@ -2,15 +2,11 @@ const introDescList = [
   "Welcome to my portfolio.",
   "Hope you're doing great.",
   "Unlocking Tech Wonders.",
-  "Creating Tomorrow, Today.",
-  "Tech Dreams, Realized.",
-  "Innovation Redefined.",
-  "Tech Passion, Unleashed.",
   "Beyond Boundaries, Techwise.",
   "Tech Trailblazer at Your Service.",
   "Empowering Future through Tech.",
   "Building Brilliance, Byte by Byte.",
-  "Welcome to My Tech Odyssey.",
+  "These lines are AI Generated :3",
 ];
 
 var currentItemOnScreen = 0;
