@@ -81,6 +81,7 @@
 .socials-wrapper {
   display: flex;
   flex-direction: column;
+  height: fit-content;
   padding: 8px;
   background-color: var(--container-subdiv-background);
   border-radius: 8px;
