@@ -81,16 +81,22 @@
                 >Email</a
               >
               <a
+                class="icon-whatsapp intro-socialLink"
+                href="https://api.whatsapp.com/send/?phone=%252B8801941010197"
+                target="_blank"
+                >WhatsApp</a
+              >
+              <a
                 class="icon-linkedin-squared intro-socialLink"
                 href="https://www.linkedin.com/in/khaled0/"
                 target="_blank"
                 >Linkedin</a
               >
               <a
-                class="icon-whatsapp intro-socialLink"
-                href="https://api.whatsapp.com/send/?phone=%252B8801941010197"
+                class="icon-github-circled intro-socialLink"
+                href="https://github.com/khaled-0/"
                 target="_blank"
-                >WhatsApp</a
+                >GitHub</a
               >
             </div>
           </div>
@@ -235,9 +241,7 @@
         <link rel="stylesheet" href="./css/content.css" />
 
         <div style="display: flex">
-          <p class="content-label" style="flex: 1">
-            My Projects/Collaborations
-          </p>
+          <p class="content-label" style="flex: 1">My Projects</p>
           <button
             onclick="toggleProjectsListExpandCollapse()"
             class="projects-nav"
@@ -335,7 +339,11 @@
               src="./img/project-banners/Sketchware-Pro.webp"
             />
             <div class="project-item-text-holder">
-              <span class="project-item-title">Sketchware Pro</span>
+              <span class="project-item-title"
+                >Sketchware Pro<span class="project-item-badge">
+                  FOSS
+                </span></span
+              >
               <span class="project-item-description"
                 >Create native Android apps on your phone.</span
               >
@@ -378,25 +386,6 @@
               >
             </div>
           </a>
-
-          <a
-            class="project-item"
-            target="_blank"
-            href="https://github.com/khaled-0?tab=repositories"
-          >
-            <div
-              class="github-card project-item-banner"
-              data-github="khaled-0"
-              data-width="400"
-              data-height=""
-              data-theme="default"
-            ></div>
-            <div class="project-item-text-holder">
-              <span class="project-item-description"
-                >Checkout My Github Profile</span
-              >
-            </div>
-          </a>
         </div>
 
         <p class="content-label" style="margin-top: 8px">Me on GitHub</p>
@@ -408,19 +397,6 @@
             document.getElementById("github-langs-image").src = githubLangSrc;
           </script>
         </div>
-
-        <!-- TODO <p class="content-label">I also have</p> -->
-        <!-- <div class="worked-projects-container"></div> -->
-
-        <p class="farewell-text">
-          Thank you for visiting my digital sanctuary of innovation and
-          creativity. As you prepare to close this window, remember that our
-          journey doesn't have to end here. Let's embark on a collaborative
-          adventure, shaping the future of technology together. Reach out to me,
-          and together we'll turn possibilities into realities, challenges into
-          triumphs, and dreams into groundbreaking achievements. The tech realm
-          awaits us—let's make it extraordinary.
-        </p>
       </div>
     </div>
   </body>
