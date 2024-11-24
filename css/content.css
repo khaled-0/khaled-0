@@ -75,6 +75,7 @@
   width: 100%;
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
@@ -126,6 +127,10 @@
   pointer-events: none;
   display: block;
   font-weight: 500;
+}
+
+.project-item-title {
+  font-weight: 550;
 }
 
 .project-item-description {

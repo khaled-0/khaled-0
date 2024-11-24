@@ -56,12 +56,7 @@
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  filter: grayscale(1);
-  transition: filter 0.3s ease;
-}
-
-#introProfilePic:hover {
-  filter: none;
+  margin-top: 1rem;
 }
 
 #introFullName {
@@ -99,8 +94,8 @@
   padding: 8px;
   cursor: pointer;
   font-size: 1em;
-  color: var(--muted-link-color);
-  text-decoration: underline dotted;
+  color: var(--default-text-color);
+  text-decoration: underline;
 }
 
 @media (hover: hover) and (pointer: fine) {
