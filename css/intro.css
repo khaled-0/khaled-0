@@ -122,6 +122,11 @@
   padding: 4px;
 }
 
+.intro-programming-lang-grid img {
+  margin: 2px;
+}
+
+
 .intro-programming-lang-item {
   width: fit-content;
   border-radius: 4px;

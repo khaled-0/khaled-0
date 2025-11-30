@@ -1,13 +1,16 @@
 const introDescList = [
-  "Welcome to my portfolio.",
-  "Hope you're doing great.",
-  "Unlocking Tech Wonders.",
-  "Beyond Boundaries, Techwise.",
-  "Tech Trailblazer at Your Service.",
-  "Empowering Future through Tech.",
-  "Building Brilliance, Byte by Byte.",
-  "These lines are AI Generated :3",
+  "Writing code so clean even future-me understands it.",
+  "Turning caffeine into scalable software since… well, several cups ago.",
+  "I fix bugs I definitely did not create. Promise.",
+  "Engineering solutions with just the right amount of wizardry.",
+  "Turning 'it should be simple' into 'it actually works.'",
+  "Coding like the internet depends on it (because it probably does).",
+  "Breaking limits, not production. (At least not on purpose.)",
+  "Turning tech chaos into elegant order—one deploy at a time.",
+  "Your friendly neighborhood developer — now with extra features.",
+  "Where professionalism meets just a hint of controlled nerd energy.",
 ];
+
 
 var currentItemOnScreen = 0;
 const textView = document.getElementById("introWelcomeSubtitle");
@@ -26,7 +29,7 @@ async function typeWriter() {
     textView.innerHTML += introDesc.charAt(i);
     await sleep(50);
   }
-  setTimeout(typeWriter, 2500);
+  setTimeout(typeWriter, 2000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -36,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const introCursor = document.getElementById("introCursor");
     if (introCursor.style.opacity == 0) introCursor.style.opacity = 1;
     else introCursor.style.opacity = 0;
-  }, 500);
+  }, 300);
 });
 
 function sleep(ms) {
