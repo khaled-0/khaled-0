@@ -3,7 +3,7 @@ name: Generate sssneekkk animation
 on:
   # run automatically every 72 hours
   schedule:
-    - cron: "0 */72 * * *"
+    - cron: "0 0 */7 * *"
 
   # allows to manually run the job at any time
   workflow_dispatch:
